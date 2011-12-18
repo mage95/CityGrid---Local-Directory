@@ -1,0 +1,34 @@
+I needed to learn more about the CityGrid APIs.  What better way than actually build a prototype.  I thought it would be good to have a simple local directory that could be deployed all by itself, or as part of another web site.
+
+I wanted the directory to look good, without having to do any graphic design, so I used Twitter Bootstrap for the user interface (UI).  
+
+I put together five pages, allowing you to browse some local business categories in West Hollywood, CA.
+
+index.php
+about.php
+search.php
+detail.php
+contact.php 
+
+The site doesn't use a database, it makes calls to the CityGrid APIs in real-ime using cURL, for every search and pulling every business listing page.  The left hand menu of categories pulls a JSON object from the /system/business-categories-datastore.txt
+
+It uses a header.php and footer.php driven from a template I put together using Twitter Bootstrap.  
+
+The ca-bundle.crt is used for making SSL curl calls.
+
+There is a citygrid and two flickr php classes in /system.
+
+Thats it.  This project is meant to just be a starter project.  For me and for you.  I will be adding features to it as I can.  
+
+Requirements:
+
+Twitter BootStrap - http://twitter.github.com/bootstrap/
+CityGrid Publisher Code - http://developer.citygridmedia.com/
+Flickr API Key - http://www.flickr.com/services/api/misc.api_keys.html
+
+Just download this Local Directory, Twitter Bootstrap, add your CityGrid Publisher Code and Flickr API Key and the site will fire up.
+
+You can then change the CSS, HTML Layouts as needed.
+
+If you have questions ping my @citygridapiteam or @kinlane
+
